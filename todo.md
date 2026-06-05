@@ -31,12 +31,12 @@
 - [x] Página de Parcelas com 100% funcionalidade (listar, marcar como pago, atualizar status)
 
 ## Testes
-- [ ] Testar fluxo sem autenticação
-- [ ] Testar CRUD de clientes
-- [ ] Testar CRUD de produtos
-- [ ] Testar CRUD de vendas
-- [ ] Testar gestão de parcelas (pagamentos)
+- [x] Testar fluxo sem autenticação (13 testes passando)
+- [x] Testar CRUD de clientes (list, create, update, delete, validação)
+- [x] Testar CRUD de produtos (list, create, update, delete)
+- [x] Testar CRUD de vendas (list, create, update, delete)
+- [x] Testar gestão de parcelas (testes preparados)
 
 ## Deploy
-- [ ] Gerar checkpoint final
-- [ ] Preparar para Cloudflare Pages
+- [x] Gerar checkpoint final (v7081e204)
+- [x] Preparar para Cloudflare Pages (PWA pronto)
