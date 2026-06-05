@@ -1,0 +1,84 @@
+{
+  "name": "FelixADM - Gestão de Beleza",
+  "short_name": "FelixADM",
+  "description": "Sistema de gestão para negócio de beleza. Gerencie clientes, produtos, vendas e parcelas de forma simples e eficiente.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#ec4899",
+  "background_color": "#ffffff",
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+      "sizes": "180x180",
+      "type": "image/webp",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+      "sizes": "180x180",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+      "sizes": "180x180",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Clientes",
+      "short_name": "Clientes",
+      "description": "Gerenciar clientes",
+      "url": "/clients",
+      "icons": [
+        {
+          "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+          "sizes": "180x180"
+        }
+      ]
+    },
+    {
+      "name": "Produtos",
+      "short_name": "Produtos",
+      "description": "Gerenciar produtos",
+      "url": "/products",
+      "icons": [
+        {
+          "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+          "sizes": "180x180"
+        }
+      ]
+    },
+    {
+      "name": "Vendas",
+      "short_name": "Vendas",
+      "description": "Registrar vendas",
+      "url": "/sales",
+      "icons": [
+        {
+          "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+          "sizes": "180x180"
+        }
+      ]
+    },
+    {
+      "name": "Parcelas",
+      "short_name": "Parcelas",
+      "description": "Gerenciar parcelas",
+      "url": "/installments",
+      "icons": [
+        {
+          "src": "https://d2xsxph8kpxj0f.cloudfront.net/310519663121054031/QL2spixexphivfCR3rJygH/apple-touch-icon-180x180-BgbJYK7Cp8x2c5RRqcunPp.webp",
+          "sizes": "180x180"
+        }
+      ]
+    }
+  ]
+}
