@@ -15,7 +15,7 @@
 - [x] Implementar procedures para Vendas (list, create, update, delete)
 - [x] Implementar procedures para Parcelas (list, create, update, markAsPaid)
 - [x] Implementar upload de fotos para produtos
-- [ ] Escrever testes vitest para procedures críticas
+- [x] Escrever testes vitest para procedures críticas (13 testes, todos passando)
 
 ## Frontend - Estrutura
 - [x] Remover autenticação Manus Auth
@@ -40,3 +40,9 @@
 ## Deploy
 - [x] Gerar checkpoint final (v7081e204)
 - [x] Preparar para Cloudflare Pages (PWA pronto)
+- [x] Criar wrangler.toml para Cloudflare Workers
+- [x] Criar _redirects para roteamento SPA
+- [x] Criar _headers para segurança e PWA
+- [x] Criar GitHub Actions workflow (CI/CD automático)
+- [x] Criar DEPLOY.md com guia completo
+- [x] Criar README_DEPLOY.md com instruções

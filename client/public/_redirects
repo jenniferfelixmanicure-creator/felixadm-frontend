@@ -1,0 +1,16 @@
+# Cloudflare Pages redirects for SPA routing
+# All routes that don't match files should go to index.html
+
+# API routes - pass through to backend
+/api/* 200
+
+# PWA assets
+/manifest.json 200
+/sw.js 200
+
+# Static files - let them through
+/favicon.ico 200
+/robots.txt 200
+
+# SPA fallback - all other routes go to index.html
+/* /index.html 200

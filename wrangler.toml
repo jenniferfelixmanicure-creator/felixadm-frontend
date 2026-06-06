@@ -1,0 +1,32 @@
+name = "felixadm-web"
+main = "dist/index.mjs"
+compatibility_date = "2024-12-16"
+
+# Build configuration
+[build]
+command = "pnpm build"
+cwd = "."
+watch_paths = ["client/src/**/*.tsx", "server/**/*.ts"]
+
+# Routes for API
+[[routes]]
+pattern = "example.com/api/*"
+zone_name = "example.com"
+
+# Environment variables
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.staging]
+vars = { ENVIRONMENT = "staging" }
+
+# Database bindings (if using D1)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "felixadm"
+# database_id = "your-db-id"
+
+# KV namespace for caching
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-id"
