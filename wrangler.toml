@@ -15,10 +15,10 @@ zone_name = "example.com"
 
 # Environment variables
 [env.production]
-vars = { ENVIRONMENT = "production" }
+vars = { ENVIRONMENT = "production", VITE_API_URL = "https://felix-admin-backend--boladosakua93.replit.app" }
 
 [env.staging]
-vars = { ENVIRONMENT = "staging" }
+vars = { ENVIRONMENT = "staging", VITE_API_URL = "https://felix-admin-backend--boladosakua93.replit.app" }
 
 # Database bindings (if using D1)
 # [[d1_databases]]
