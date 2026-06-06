@@ -37,10 +37,27 @@ queryClient.getMutationCache().subscribe(event => {
   }
 });
 
+// Detect backend URL automatically
+const getBackendUrl = () => {
+  // Try environment variable first
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL;
+  }
+  
+  // If running on same domain, use relative URL
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+    // For production, assume backend is on same domain
+    return '/api/trpc';
+  }
+  
+  // Default to relative URL for development
+  return '/api/trpc';
+};
+
 const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
-      url: "/api/trpc",
+      url: getBackendUrl(),
       transformer: superjson,
       fetch(input, init) {
         return globalThis.fetch(input, {
