@@ -6,11 +6,12 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { DatabaseProvider } from "./contexts/DatabaseContext";
 import Layout from "./components/Layout";
-import Dashboard from "./pages/Dashboard";
-import Clients from "./pages/Clients";
-import Products from "./pages/Products";
-import Sales from "./pages/Sales";
-import Installments from "./pages/Installments";
+import Dashboard from "@/pages/Dashboard";
+import Clients from "@/pages/Clients";
+import Products from "@/pages/Products";
+import Sales from "@/pages/Sales";
+import Installments from "@/pages/Installments";
+import Reports from "@/pages/Reports";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -20,8 +21,9 @@ function Router() {
         <Route path={"/clients"} component={Clients} />
         <Route path={"/products"} component={Products} />
         <Route path={"/sales"} component={Sales} />
-        <Route path={"/installments"} component={Installments} />
-        <Route path={"/404"} component={NotFound} />
+        <Route path="/installments" component={Installments} />
+      <Route path="/reports" component={Reports} />
+      <Route path="*" component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
       </Switch>

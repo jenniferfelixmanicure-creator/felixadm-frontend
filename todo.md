@@ -37,6 +37,28 @@
 - [x] Testar CRUD de vendas (list, create, update, delete)
 - [x] Testar gestão de parcelas (testes preparados)
 
+## Relatórios
+- [x] Página de Relatórios com gráficos (Recharts)
+- [x] Gráfico de vendas por dia (linha)
+- [x] Gráfico de status de parcelas (pizza)
+- [x] Gráfico de produtos mais vendidos (barras)
+- [x] KPIs: Total vendas, parcelas pagas, vencidas, taxa de pagamento
+
+## Notificações
+- [x] Criar server/notifications.ts com 3 funções
+- [x] Criar server/cron.ts com configuração de jobs
+- [x] Adicionar procedures de notificações ao routers.ts
+- [x] Verificar parcelas vencidas (a cada 6h)
+- [x] Resumo diário de vendas (20:00)
+- [x] Alerta de parcelas vencendo (09:00)
+
+## Dados de Exemplo
+- [x] Criar seed-db.mjs com dados de teste
+- [x] 5 clientes de exemplo
+- [x] 6 produtos de exemplo
+- [x] 15 vendas com datas variádas
+- [x] Parcelas em 1x e 3x com status misto
+
 ## Deploy
 - [x] Gerar checkpoint final (v7081e204)
 - [x] Preparar para Cloudflare Pages (PWA pronto)

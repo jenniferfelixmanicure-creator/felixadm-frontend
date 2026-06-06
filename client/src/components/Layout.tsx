@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Home, Users, Package, ShoppingCart, CreditCard } from "lucide-react";
+import { Menu, X, Home, Users, Package, ShoppingCart, CreditCard, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -13,6 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { href: "/products", label: "Produtos", icon: Package },
     { href: "/sales", label: "Vendas", icon: ShoppingCart },
     { href: "/installments", label: "Parcelas", icon: CreditCard },
+    { href: "/reports", label: "Relatórios", icon: BarChart3 },
   ];
 
   const isActive = (href: string) => location === href;

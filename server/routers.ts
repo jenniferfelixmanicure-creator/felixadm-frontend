@@ -3,9 +3,28 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import * as db from "./db";
 import { storagePut } from "./storage";
+import { checkOverdueInstallments, sendDailySalesSummary, sendUpcomingDueNotification } from "./notifications";
 
 export const appRouter = router({
   system: systemRouter,
+
+  // ============ NOTIFICATIONS ============
+  notifications: router({
+    checkOverdue: publicProcedure.query(async () => {
+      const result = await checkOverdueInstallments();
+      return { success: true, count: result?.length || 0 };
+    }),
+
+    sendDailySummary: publicProcedure.query(async () => {
+      const result = await sendDailySalesSummary();
+      return { success: true, count: result?.length || 0 };
+    }),
+
+    sendUpcomingDue: publicProcedure.query(async () => {
+      const result = await sendUpcomingDueNotification();
+      return { success: true, count: result?.length || 0 };
+    }),
+  }),
 
   // ============ CLIENTS ============
   clients: router({
